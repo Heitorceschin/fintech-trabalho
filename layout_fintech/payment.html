@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Área de Pagamento do Banco</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Área de Pagamento do Banco</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="numero-conta">Número da Conta:</label>
+                <input type="text" id="numero-conta" name="numero-conta" required>
+            </div>
+
+            <div class="form-group">
+                <label for="valor">Valor a Pagar:</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="metodo-pagamento">Método de Pagamento:</label>
+                <select id="metodo-pagamento" name="metodo-pagamento" required>
+                    <option value="">Selecione o método de pagamento</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="transferencia">Transferência Bancária</option>
+                    <option value="pix">Pix</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Pagar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
